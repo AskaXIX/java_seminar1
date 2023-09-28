@@ -22,11 +22,19 @@ public class program4 {
          * 
          * Пример 3: а = 3, b = 0, ответ: 1
          */
+        System.out.printf("Введите число a = ");
 
-        System.out.println("a: ");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("b: ");
-        Scanner scanner2 = new Scanner(System.in);
-        
+        int a = scanner.nextInt();
+        System.out.printf("Введите число b = ");
+        int b = scanner.nextInt();
+        int c = a;
+        for (int i = 0; i < b - 1; i++) {
+            a *= c;
+        }
+        System.out.printf("a в степени b = " + a);
+
+        scanner.close();
+
     }
 }
